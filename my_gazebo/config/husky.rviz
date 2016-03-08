@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Path1
+        - /Path2
       Splitter Ratio: 0.703822
     Tree Height: 233
   - Class: rviz/Selection
@@ -81,7 +82,7 @@ Visualization Manager:
       Max Color: 255; 255; 255
       Max Intensity: 999999
       Min Color: 0; 0; 0
-      Min Intensity: -1.17637e-16
+      Min Intensity: 0
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -198,7 +199,7 @@ Visualization Manager:
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
-      Color: 25; 255; 0
+      Color: 255; 5; 0
       Enabled: true
       Line Style: Lines
       Line Width: 0.03
@@ -208,6 +209,20 @@ Visualization Manager:
         Y: 0
         Z: 0
       Topic: /trajectory_lsm
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Line Style: Lines
+      Line Width: 0.03
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Topic: /gt_pose
       Value: true
   Enabled: true
   Global Options:

@@ -40,9 +40,13 @@
   <!-- Use test_depend for packages you need only for testing: -->
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>gazebo_msgs</build_depend>
   <build_depend>husky_gazebo</build_depend>
   <build_depend>laser_scan_matcher</build_depend>
   <build_depend>hector_trajectory_server</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>gazebo_msgs</run_depend>
   <run_depend>husky_gazebo</run_depend>
   <run_depend>laser_scan_matcher</run_depend>
   <run_depend>hector_trajectory_server</run_depend>

@@ -5,6 +5,8 @@ project(my_gazebo)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  gazebo_msgs
   husky_gazebo
   laser_scan_matcher
   hector_trajectory_server
@@ -116,6 +118,9 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
+
+add_executable(true_pose src/output_true_pose.cpp)
+target_link_libraries(true_pose ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(my_gazebo
