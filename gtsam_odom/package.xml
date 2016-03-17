@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>my_gazebo</name>
+  <name>gtsam_odom</name>
   <version>0.0.0</version>
-  <description>The my_gazebo package</description>
+  <description>The gtsam_odom package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
@@ -41,18 +41,9 @@
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
-  <build_depend>gazebo_msgs</build_depend>
   <build_depend>tf</build_depend>
-  <build_depend>husky_gazebo</build_depend>
-  <build_depend>laser_scan_matcher</build_depend>
-  <build_depend>hector_trajectory_server</build_depend>
   <run_depend>roscpp</run_depend>
-  <run_depend>gazebo_msgs</run_depend>
   <run_depend>tf</run_depend>
-  <run_depend>husky_gazebo</run_depend>
-  <run_depend>laser_scan_matcher</run_depend>
-  <run_depend>hector_trajectory_server</run_depend>
-
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

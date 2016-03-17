@@ -1,17 +1,16 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(my_gazebo)
+project(gtsam_odom)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  gazebo_msgs
   tf
-  husky_gazebo
-  laser_scan_matcher
-  hector_trajectory_server
 )
+
+find_package(gtsam NO_MODULE CONFIGS gtsamConfig.cmake GTSAMConfig.cmake)
+include_directories(${GTSAM_INCLUDE_DIR})
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -120,8 +119,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(true_pose src/output_true_pose.cpp)
-target_link_libraries(true_pose ${catkin_LIBRARIES})
+add_executable(gtsam_pose src/output_gtsam_pose.cpp)
+target_link_libraries(gtsam_pose gtsam ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(my_gazebo

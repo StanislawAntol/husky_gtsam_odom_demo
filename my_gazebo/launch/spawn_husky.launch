@@ -38,7 +38,7 @@
   <arg name="z" default="0"/>
   <arg name="roll" default="0"/>
   <arg name="pitch" default="0"/>
-  <arg name="yaw" default="0"/>
+  <arg name="yaw" default="0.0"/>
   <!-- Spawn robot in gazebo -->
   <node name="spawn_husky_model" pkg="gazebo_ros" type="spawn_model"
     args="-unpause -urdf -param robot_description -model mobile_base
